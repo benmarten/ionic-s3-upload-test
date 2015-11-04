@@ -47,7 +47,6 @@ angular.module('starter.controllers', [])
         ft.upload(imageURI, s3Config.url,
         // WORKS: Upload to heroku server.
         // ft.upload(imageURI, 'https://fathomless-waters-7569.herokuapp.com/file-upload',
-        // ft.upload(imageURI, s3Config.url,
           function(e) {
             if (e.responseCode === 204) {
               $scope.status = 'Uploaded!';
